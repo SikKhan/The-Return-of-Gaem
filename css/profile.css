@@ -1,0 +1,104 @@
+.main {
+    display: flex;
+}
+
+p {
+    color: black;
+}
+
+.settings {
+    background-color: white;
+    width: 65%;
+    height: 60%;
+    margin: 5%;
+    align-items: center;
+}
+
+.profile {
+    background-color: white;
+    width: 20%;
+    height: 75%;
+    margin: 5%;
+}
+.settings-text {
+    color: black;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.profile-text {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    padding-top:15px;
+    margin-bottom: 150px
+}
+
+
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10%;
+    padding-right: 15%;
+    padding-left: 18%;
+
+}
+
+.theme {
+    width: 110px;
+    height: 120px;
+    display: flex;
+    padding: 25px 35px;
+    cursor: pointer;
+    margin: 15px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    background-color: #be8a30;
+    border-radius: 20px;
+}
+
+.theme1 {
+    background: linear-gradient(#485563, #29323c);
+}
+.theme2 {
+    background: linear-gradient(#265348, #193831);
+}
+.theme3 {
+    background: linear-gradient(#780206, #061161);
+}
+.theme4 {
+    background: linear-gradient(#606c88, #3f4c6b);
+}
+.theme5 {
+    background: linear-gradient(#E6DADA, #274046);
+}
+.theme6 {
+    background: linear-gradient(#666600, #999966);
+}
+.theme:hover{
+    transform: translateY(-10px);
+}
+
+
+.profile p {
+    padding-left: 20px;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1000px) {
+
+    .settings, .profile {
+        width: 86%;
+    }
+
+    .container {
+        height: 100%;
+    }
+    .main {
+        flex-direction: column;
+    }
+}

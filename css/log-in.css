@@ -1,0 +1,144 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.26);
+}
+
+.inner-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card h2 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.input-box {
+    width: 100%;
+    background: transparent;
+    border: 1px solid black;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: white;
+    font-size: 12px;
+
+}
+
+button {
+    width: 100%;
+    background: transparent;
+    border: 1px solid black;
+    margin: 32px 0px 10px;
+    height: 32px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: white;
+    background-color: #2A2A72;
+    cursor: pointer;
+}
+
+.lebutton {
+    width: 100%;
+    background: transparent;
+    border: 1px solid black;
+    margin: 32px 0px 10px;
+    height: 32px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: white;
+    background-color: #2A2A72;
+    cursor: pointer;
+}
+
+.submit-btn {
+    position: relative;
+}
+
+
+
+span {
+    margin-left: 10px;
+}
+
+.card .btn {
+    margin-top: 70px
+}
+
+.card a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align:center;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 84%;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        padding-bottom: 10%;
+    }
+    .card {
+        transform: translateY(50px);
+    }
+
+}

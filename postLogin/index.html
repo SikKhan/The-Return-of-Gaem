@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Storinator</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/home-page.css">
+        <script src="../js/themes.js"></script>
+        <script src="../js/script.js" defer></script>
+        <script src="../js/interactivity.js"></script>
+        <script>
+            document.container.style.background = localStorage.bgcolor;
+        </script>
+    </head>
+
+    <body onload="changetheme()">
+        <div class="container" id="container">
+            <nav class="navbar">
+                <div class="brand-title">Storinator</div>
+                <a href="#" class="toggle-button">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                  <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./stories.html">STORIES</a></li>
+                    <li><a href="./profile.html">PROFILE</a></li>
+                    <li><a href="./team.html">THE TEAM</a></li>
+                  </ul>
+                </div>
+            </nav>
+
+            <div class="row">
+                <div class="col col1">
+                    <h1>The Return of Gaem</h1>
+                    <p>It's us, we're back this semester, with a browser based book for your enjoyment, complete with original(-ish) stories.</p>
+                    <input class="team" type="button" onclick="location.href='team.html';"  style="font-weight: bold;" value="Meet the team" />
+                    <input class="work" type="button" onclick="location.href='stories.html';"  style="font-weight: bold;" value="Read our work" />
+                </div>
+                <div class="col col2">
+                    <div class="card-row">
+                        <div class="card card1" style="cursor: pointer;" onclick="window.location='books/book1/book1.html'; bookAdd()">
+                            <h5>Little Red Riding Hood</h5>
+                            <p>A BIT twist on a classic story</p>
+                        </div>
+                        <div class="card card2" style="cursor: pointer;" onclick="window.location='books/book2/book2.html'; bookAdd()">
+                            <h5>Robots: A brief history</h5>
+                            <p>The story of the first robot</p>
+                        </div>
+                        <div class="card card3" style="cursor: pointer;" onclick="window.location='books/book3/book3.html'; bookAdd()">
+                            <h5>A.I: The Scary Side</h5>
+                            <p>A precautionary tale of what overthinking can do to you</p>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card card4" style="cursor: pointer;" onclick="window.location='books/book4/book4.html'; bookAdd()">
+                            <h5>The Smoke Break</h5>
+                            <p>A glimpse into the reality of big coroporations</p>
+                        </div>
+                        <div class="card card5" style="cursor: pointer;" onclick="window.location='books/book5/book5.html'; bookAdd()">
+                            <h5>The Animal Rights Activist</h5>
+                            <p>I don't really know what is going on here</p>
+                        </div>
+                        <div class="card card6" style="cursor: pointer;" onclick="window.location='./stories.html';">
+                            <h5>More</h5>
+                            <p>Click here for the full list</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

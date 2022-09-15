@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Storinator</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/home-page.css">
+        <link rel="stylesheet" href="../css/profile.css">
+        <script src="../js/themes.js"></script>
+        <script src="../js/interactivity.js"></script>
+        <script src="../js/script.js" defer></script>
+        <script>
+            
+        </script>
+    </head>
+
+    <body onload="changetheme(); booksRead()">
+        <div class="container" id="container">
+            <nav class="navbar">
+                <div class="brand-title">Storinator</div>
+                <a href="#" class="toggle-button">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                  <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./stories.html">STORIES</a></li>
+                    <li><a href="../index.html">LOG OUT</a></li>
+                    <li><a href="./team.html">THE TEAM</a></li>
+                  </ul>
+                </div>
+            </nav>
+
+            <div class="main">
+                <div class="settings">
+                    <h1 class="settings-text">Themes</h1>
+                    
+                    <div class="colors">
+                        <div class="theme theme1" id="theme1" onclick="theme1()"></div>
+                        <div class="theme theme2" id="theme2" onclick="theme2()"></div>
+                        <div class="theme theme3" id="theme3" onclick="theme3()"></div>
+                        <div class="theme theme4" id="theme4" onclick="theme4()"></div>
+                        <div class="theme theme5" id="theme5" onclick="theme5()"></div>
+                        <div class="theme theme6" id="theme6" onclick="theme6()"></div>
+                    </div>
+                </div>
+                
+                <div class="profile">
+                    <h1 class="profile-text">Profile</h1>
+                    <p id="read" class="read"></p>
+                </div>
+            </div>
+
+            
+
+
+
+           
+    </div>
+            
+    </body>
+</html>

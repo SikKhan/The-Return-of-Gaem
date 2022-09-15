@@ -1,0 +1,157 @@
+.row {
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+.col2 {
+    padding-left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-row {
+    display: flex;
+}
+
+
+h1{
+    color: white;
+    font-size: 625%;
+}
+
+p{
+    color: white;
+    font-size: 93.75%;
+    line-height: 100%;
+}
+
+.col input{
+    width: 180px;
+    color:black;
+    font-size: 93.75%;    
+    padding: 12px 0;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    transition: transform 0.5s;
+}
+
+.col input:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.work {
+    visibility: hidden;
+}
+
+
+.card
+{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    background-color: #be8a30;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 17px;
+    margin-top: 50px
+}
+.card p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.articles {
+    margin-bottom: 46%;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 1500px)
+{
+    h1 {
+        font-size: 525%;
+    } 
+
+    .card-row {
+        padding-right: 182px;
+    }
+
+    .card {
+        width: 150px;
+        height: 180px;
+        padding: 15px;
+        margin: 10px 5px;
+    }
+
+    .card h5{
+        font-size: 17px;
+        margin-top: 50px
+    }
+    .card p{
+        font-size: 15px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 1250px)
+{
+    .col2 {
+        padding-left: 2%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col input {
+        justify-content: center;
+        width: 100%;
+    }
+
+    h1{
+        padding: 10px;
+        padding-top: 50px;
+    }
+
+    p{
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    .col2 {
+        display: none;
+    }
+
+    .work {
+        visibility: visible;
+    }
+    
+}

@@ -1,0 +1,142 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<link rel="stylesheet" href="../../css/styles.css">
+<script type="text/javascript" src="../../js/script.js" defer></script>
+<script type="text/javascript" src="../../js/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../js/modernizr.2.5.3.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar">
+    <div class="brand-title">Storinator</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="../../index.html">HOME</a></li>
+        <li><a href="../../stories.html">STORIES</a></li>
+        <li><a href="../../log-in.html">LOGIN</a></li>
+        <li><a href="../../team.html">THE TEAM</a></li>
+      </ul>
+    </div>
+</nav>
+<div class="flipbook-viewport">
+	<div class="container">
+
+        
+
+		<div class="flipbook">
+			<div class="hard front-page">
+                <div class="front-page-elements">
+                    <h1 class = "title">Robots: A brief history</h1>
+                    <img class="book-cover" src="../../images/books/book2/robot1.jpg">
+                </div>
+            </div>
+			<div>
+				<p>The word “robot” is becoming more common in our vocabulary, although most people still treat it as something new. Robots aren’t a new technology as we think and this robot from 1773 by the name of “Drawing Boy Automata” proves it. Back in the day, however, people would not refer to such technologies as robots, but rather as machines or mechanisms.
+                </p>
+                <p>This ancient robot was forgotten in time as people during the 18th century weren’t able to comprehend this piece of technology, especially the impressive mechanism at the back of the robot which was way ahead of their time. Some people referred to this robot as “The Writer” due to what it was able to do.</p>
+                <p>The man with the futurist vision that was able to create this robot was Pierre Jaquet-Droz. Pierre was the first watchmaker behind the famous brand Automata. </p>
+			</div>
+            <div>
+                <p>Born in Switzerland, Pierre always was interested in watches and specifically how they work. From a very young age, he would dismantle old clocks to discover the intricate system inside.
+                </p>
+                
+                <p>Even to this day, Pierre Jaquet-Droz is believed to be the best watchmaker of his time and his pièce de résistance proves it. In 1772 he wanted to really show the world the power of technology. Every piece of technology had been created to solve a problem, Pierre’s problem as well as the world’s population at the time was writing. Not everyone was a neat writer, nor did most people know how to write.</p>
+                <p>That is why Pierre decided to create a programmable writing machine. With the help of this son Henri Louis Jaquet-Droz and a good friend Jean-Frederic Leschot, Pierre managed to create over 6,000 custom mechanical components that would create the Writer.</p>
+            </div>
+            <div>
+                <p>This machine would be able to write with a quill and ink any letter from the English alphabet that is shown on the wheel at the back. What is amazing is that the writer works on his own by even applying the ink to the quill and without the use of any source of energy, it is all mechanic.</p>
+                        <p>You can have a look at the way the robot functions in this short documentary made by Professor Simon Schaffer. The video shows how the robot functions and how natural his movements are when writing. What is even more freakish is that his eyes focus on every letter he writes on paper, as if it were alive.</p>
+                        <p>In his career as an innovative inventor, Pierre also made two other such types of robots named The Draughtsman and The Musician both autonomous and doing what their names imply. Some historians say that Pierre is the father of computing for the mechanisms he created, at least the basics of computing.</p>
+            </div>
+            <div>
+                <p>When these creations were presented to the public people were simply amazed. Some who didn’t understand the complex mechanism thought that the machines were actually possessed by some sort of demonic power, whilst many others just mistook them for simple toys due to their appearance.</p>
+                        <p>The world never truly understood the technological jump and what an important historical moment it was. It surprises me that even to this day not many people are aware of this creation and some still think that it is a hoax. Those who still do not believe it can see the machine with their own eyes at the Museum of Art History in Neuchatel, Switzerland.</p>
+                        <p>Just like Leonardo da Vinci or Nikola Tesla, Pierre Jaquet-Droz is just another visionary that was thinking way ahead of the technology available at the time or simply born in the wrong century.</p>                        
+            </div>
+            <div>
+                <p>If we take a look at today’s technology and how quickly it evolves we slowly stop being amazed as today’s science fiction movie presents tomorrow’s technology and the capabilities of the world. For the present society, the word “robot” refers to a much more complex system that focuses on artificial intelligence.</p>
+            </div>
+			<div>
+                <h1 class="end">The End!</h1>
+            </div>
+            <div class="hard back-page"></div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+function checkMobile() {
+ return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+}   	
+
+function loadApp() {
+	
+		// Create the flipbook
+
+        
+	
+		$('.flipbook').turn({
+				// Width
+		
+				width:922,
+				
+				// Height
+		
+				height:600,
+		
+				// Elevation
+		
+				elevation: 50,
+				
+				// Enable gradients
+		
+				gradients: true,
+				
+				// Auto center this flipbook
+		
+				autoCenter: true,
+		
+		});
+        $(window).resize(function(){
+            if (!checkMobile()) { // not mobile
+             $('.flipbook').turn('display', 'double');
+             $('.flipbook').turn('width', '922');
+             $('.flipbook').turn('height', '600');
+            }
+            else {
+             $('.flipbook').turn('display', 'single');
+             $('.flipbook').turn('width', '600');
+             $('.flipbook').turn('height', '922');
+            }
+        });
+
+
+	}
+	
+	// Load the HTML4 version if there's not CSS transform
+	
+	yepnope({
+		test : Modernizr.csstransforms,
+		yep: ['../../js/turn.min.js'],
+		nope: ['../../js/turn.html4.min.js'],
+		both: ['book.css'],
+		complete: loadApp
+	});
+	
+</script>
+
+</body>
+</html>

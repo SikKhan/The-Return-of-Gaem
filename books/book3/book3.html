@@ -1,0 +1,131 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<link rel="stylesheet" href="../../css/styles.css">
+<script type="text/javascript" src="../../js/script.js" defer></script>
+<script type="text/javascript" src="../../js/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../js/modernizr.2.5.3.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar">
+    <div class="brand-title">Storinator</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="../../index.html">HOME</a></li>
+        <li><a href="../../stories.html">STORIES</a></li>
+        <li><a href="../../log-in.html">LOGIN</a></li>
+        <li><a href="../../team.html">THE TEAM</a></li>
+      </ul>
+    </div>
+</nav>
+<div class="flipbook-viewport">
+	<div class="container">
+
+        
+
+		<div class="flipbook">
+			<div class="hard front-page">
+                <div class="front-page-elements">
+                    <<h1 class = "title">A.I: The Scary Side</h1>
+                    <img class="book-cover" src="../../images/books/book3/book3cover.png">
+                    <h3>Writer: Eiman</h3>
+                </div>
+            </div>
+			<div>
+				<p>Frightened with sweat and tears dripping down my cheeks. Taking
+                    short, sharp breaths with my eyes pinned to the path before me. Thinking about how the program could go so wrong when we were so careful. It’s too quiet, unnaturally quiet, not even a cricket, only the thunderous pounding of my feet. Suddenly I stumble over a broken branch, only now noticing the dirt, leaves, and dried blood covering my feet. I frantically try to get up, glancing over my shoulder - the number one rule of what not to do when running from something.
+                    </p>
+                    <p>Shock rips through my body, I didn’t realize how close it was to me and I doubt I can produce a good scream for help, my mouth is too dry; but the hell if I don’t at least try. I take a deep breath, ignoring the sharp pain shooting through my chest, at which moment my lab coat gets caught on a branch, causing me to lose my footing and fall into a ditch.</p>
+			</div>
+            <div>
+                <p>I look up in agony, not sure if I should feel relief, as there seems to be no sign of the figure, or if I should feel hopeless with the fact that I’m now stuck in a ditch. My heart stops beating for a second as I look up at this faceless, shapeless figure, its robotic arms reaching out to me. I try to back away from it, staring in horror as the arms move closer until it wraps around my neck and forcefully drags me from the ditch.
+                </p>
+                
+                <p>I can’t scream, I can’t even cry, But all thoughts disappear, replaced with one single thought. I can’t breathe.</p>
+                <p>My eyes fly open as I gasp for air, drenched in sweat, nightmare fog still clouding my brain. I reach for my throat, sighing in relief when all I can feel is clammy skin.</p>
+            </div>
+            <div>
+                <p>“Just another dream” I whisper to muffin, my cat curled up at my feet. I squint my eyes against the bright screen of my phone which informs me that it is 4 am. With a sigh, I stare at the mirror across the room when it hits me. “I’ve gotta get over my fear of robots if I want to get this job in the AI department“</p>
+            </div>
+            <div>
+                <h1 class="end">The End!</h1>
+            </div>
+            <div class="hard back-page"></div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+function checkMobile() {
+ return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+}   	
+
+function loadApp() {
+	
+		// Create the flipbook
+	
+		$('.flipbook').turn({
+				// Width
+		
+				width:922,
+				
+				// Height
+		
+				height:600,
+		
+				// Elevation
+		
+				elevation: 50,
+				
+				// Enable gradients
+		
+				gradients: true,
+				
+				// Auto center this flipbook
+		
+				autoCenter: true,
+		
+		});
+        $(window).resize(function(){
+            if (!checkMobile()) { // not mobile
+             $('.flipbook').turn('display', 'double');
+             $('.flipbook').turn('width', '922');
+             $('.flipbook').turn('height', '600');
+            }
+            else {
+             $('.flipbook').turn('display', 'single');
+             $('.flipbook').turn('width', '600');
+             $('.flipbook').turn('height', '922');
+            }
+        });
+
+
+	}
+	
+	// Load the HTML4 version if there's not CSS transform
+	
+	yepnope({
+		test : Modernizr.csstransforms,
+		yep: ['../../js/turn.min.js'],
+		nope: ['../../js/turn.html4.min.js'],
+		both: ['book.css'],
+		complete: loadApp
+	});
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Storinator</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/log-in.css">
+        <script src="../js/themes.js"></script>
+        <script src="../js/script.js" defer></script>.
+        <script src="../js/interactivity.js" defer></script>
+    </head>
+    <body onload="changetheme()">
+        <div class="container" id="container">
+            <div class="navbar">
+                <div class="brand-title">Storinator</div>
+                <a href="#" class="toggle-button">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                  <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./stories.html">STORIES</a></li>
+                    <li><a href="./profile.html" id="log-in">PROFILE</a></li>
+                    <li><a href="./team.html">THE TEAM</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="inner-box" id="card">
+                    <div class="card-front">
+                        <h2>Log In</h2>
+                        <form method="post" name="userform">
+                            <input type="email" class="input-box" placeholder="Enter your Email" name="loginName" id="loginName" required>
+                            <input type="password" class="input-box" placeholder="Password" name="loginPassword" id="loginPassword" required>
+                            <button type="submit" class="submit-btn loginButton" onclick="login()">Submit</button>
+                        </form>
+                        <button type="button" class="btn" onclick="openRegister()">Register</button>
+                    </div>
+                    <div class="card-back">
+                        <h2>Register</h2>
+                        <form method="post" name="userform">
+                            <input type="email" class="input-box" placeholder="Enter your Email" name="registerName" id="registerName" required>
+                            <input type="password" class="input-box" placeholder="Enter your password" name="registerPassword" id="registerPassword" required>
+                            <input type="password" class="input-box" placeholder="Enter your password again" name="registerPassword2" id="registerPassword2" required>      
+                            <button type="submit" class="submit-btn registerButton" id="registerButton" onclick="register()"> Submit</button>
+                        </form>
+                        <button type="button" class="btn" onclick="openLogin()">Log In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

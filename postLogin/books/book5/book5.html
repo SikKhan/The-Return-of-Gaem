@@ -1,0 +1,126 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<link rel="stylesheet" href="../../../css/styles.css">
+<script src="../../../js/themes.js"></script>
+<script type="text/javascript" src="../../../js/script.js" defer></script>
+<script type="text/javascript" src="../../../js/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../js/modernizr.2.5.3.min.js"></script>
+
+</head>
+<body onload="changetheme()">
+<nav class="navbar">
+    <div class="brand-title">Storinator</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="../../index.html">HOME</a></li>
+        <li><a href="../../stories.html">STORIES</a></li>
+        <li><a href="../../profile.html">PROFILE</a></li>
+        <li><a href="../../team.html">THE TEAM</a></li>
+      </ul>
+    </div>
+</nav>
+<div class="flipbook-viewport">
+	<div class="container">
+
+        
+
+		<div class="flipbook">
+			<div class="hard front-page">
+                <div class="front-page-elements">
+                    <h1 class = "title">The Animal Rights Activist</h1>
+                        <img class="robot1" src="../../../images/books/book5/book5cover.jpg">
+                        <h3>Writer: Faisal</h3>
+                </div>
+            </div>
+			<div>
+				<p>There once was a programmer, said programmer encountered a bug in his AI code, the programmer was confused at first, assumed it was merely a minor typo however after thirty minutes of checking his code he found no such typo.
+                </p>
+                <p>He searched on the internet but came out empty handed, he asked his colleagues but to no avail, but then a senior developer said this "Go for a walk, there you will find your answers"</p>
+                <p>The programmer thought the senior developer was merely trying to cover his lack of experience but he begrudgingly agreed. After walking for what seemed like an eternity the young programmer saw an ant hill
+                </p>
+			</div>
+            <div>
+                <p>He mustered every ounce of frustration and kicked the ant hill, causing a massive cloud of sand and ants, afterward a massive army of ants erupted out of the remnantants of the ant hill.</p>
+                <p>The young programmer noticed that each group of ants had their own task, some were hunting, others were repairing, it was then that the young programmer finally figured out how to deal with that fatal error and went on to become an animal rights activist.</p>
+            </div>
+            <div class="hard back-page"></div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+function checkMobile() {
+ return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+}   	
+
+function loadApp() {
+	
+		// Create the flipbook
+
+        
+	
+		$('.flipbook').turn({
+				// Width
+		
+				width:922,
+				
+				// Height
+		
+				height:600,
+		
+				// Elevation
+		
+				elevation: 50,
+				
+				// Enable gradients
+		
+				gradients: true,
+				
+				// Auto center this flipbook
+		
+				autoCenter: true,
+		
+		});
+        $(window).resize(function(){
+            if (!checkMobile()) { // not mobile
+             $('.flipbook').turn('display', 'double');
+             $('.flipbook').turn('width', '922');
+             $('.flipbook').turn('height', '600');
+            }
+            else {
+             $('.flipbook').turn('display', 'single');
+             $('.flipbook').turn('width', '600');
+             $('.flipbook').turn('height', '922');
+            }
+        });
+
+
+	}
+	
+	// Load the HTML4 version if there's not CSS transform
+	
+	yepnope({
+		test : Modernizr.csstransforms,
+		yep: ['../../../js/turn.min.js'],
+		nope: ['../../../js/turn.html4.min.js'],
+		both: ['book.css'],
+		complete: loadApp
+	});
+	
+</script>
+
+</body>
+</html>

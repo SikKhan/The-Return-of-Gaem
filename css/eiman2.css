@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+p {
+	font-size: 2rem;
+	color: #000000;
+	line-height: 5rem;
+	margin-bottom: 5rem;
+	text-align: center;
+}
+
+body {
+	background: url(../images/eiman-bg.jpg);
+	background-position: 0 1000px;
+	font-family: 'Oswald', sans-serif;
+}
+
